@@ -1,13 +1,15 @@
 require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors');
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
 const routes = require('./routes');
-app.use('/api/v1', routes);
+app.use('/api', routes);
 
 // 404 handler
 app.use((req, res, next) => {
