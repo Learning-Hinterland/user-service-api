@@ -23,6 +23,6 @@
   },
   "prisma": {
     "schema": "./src/database/schema.prisma",
-    "seed": "node ./src/database/seed.js"
+    "seed": "node ./src/database/seeders/index.js"
   }
 }

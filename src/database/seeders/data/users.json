@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Bagus Admin",
+        "email": "bagus@admin.com",
+        "role": "admin"
+    },
+    {
+        "name": "Lala Admin",
+        "email": "lala@admin.com",
+        "role": "admin"
+    },
+    {
+        "name": "Magdalena Admin",
+        "email": "magdalena@admin.com",
+        "role": "admin"
+    },
+    {
+        "name": "Sari Admin",
+        "email": "sari@admin.com",
+        "role": "admin"
+    },
+    {
+        "name": "Bagus Admin",
+        "email": "bagus@lecturer.com",
+        "role": "lecturer"
+    },
+    {
+        "name": "Lala Admin",
+        "email": "lala@lecturer.com",
+        "role": "lecturer"
+    },
+    {
+        "name": "Magdalena Admin",
+        "email": "magdalena@lecturer.com",
+        "role": "lecturer"
+    },
+    {
+        "name": "Sari Admin",
+        "email": "sari@lecturer.com",
+        "role": "lecturer"
+    },
+    {
+        "name": "Bagus Admin",
+        "email": "bagus@student.com",
+        "role": "student"
+    },
+    {
+        "name": "Lala Admin",
+        "email": "lala@student.com",
+        "role": "student"
+    },
+    {
+        "name": "Magdalena Admin",
+        "email": "magdalena@student.com",
+        "role": "student"
+    },
+    {
+        "name": "Sari Admin",
+        "email": "sari@student.com",
+        "role": "student"
+    }
+]
