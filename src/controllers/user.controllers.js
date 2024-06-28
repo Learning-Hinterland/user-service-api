@@ -146,4 +146,39 @@ async function createUser(req, res, next) {
     }
 }
 
-module.exports = { getUsers, getUserById, createUser };
+async function updateUser(req, res, next) {
+    try {
+        const { id } = req.params;
+        const { name, email, role, password } = req.body;
+
+        if (!name || !email || !role || !password) {
+            return res.status(400).json({
+                status: false,
+                message: 'Missing required fields',
+                error: null,
+                data: null
+            });
+        }
+
+        const user = await prisma.user.update({
+            where: { id: parseInt(id) },
+            data: {
+                name,
+                email,
+                role,
+                password: await bcrypt.hash(password, 10)
+            }
+        });
+
+        res.status(200).json({
+            status: true,
+            message: 'User updated',
+            error: null,
+            data: user
+        });
+    } catch (error) {
+        next(error);
+    }
+}
+
+module.exports = { getUsers, getUserById, createUser, updateUser };
